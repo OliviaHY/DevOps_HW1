@@ -53,6 +53,7 @@ generate do.pub (public key) and do (private key)
 16.  install node.js and npm    `sudo apt-get update`  `sudo apt-get install nodejs`  `sudo apt-get install npm`(**configuration management**)
 17.  write olivia_reachSky.js to run python scripts and generate actual inventory file
 18.  run olivia_reachSky.js by `nodejs olivia_reachSky.js` (have to run previous steps before this) (**automatically generate inventory**)         
+         
 ###Results
 ![result](hw2.gif))
 

@@ -9,7 +9,7 @@ name: Ying(Olivia) Huang;
 email: yhuang34@ncsu.edu
 
 ###Steps
-1.   (** provisioning two servers: ec2 and droplet**)   
+1.
      Create droplet in digitalocean: hw1-server1
      ![Droplet](droplet.png)
     Create EC2 in aws. 
@@ -46,7 +46,6 @@ generate do.pub (public key) and do (private key)
   ping:    
   name: install nginx   
   apt: pkg=nginx state=installed update_cache=true   
-       (**playbooks to install nginx **)
 14. put all python scripts that were used to get inventory into ~/scripts
 15.  run playbook `ansible-playbook ec2-playbook.yml -i scripts/ec2.py` `ansible-playbook droplet-playbook.yml -i scripts/digital_ocean.py`
 16.  install node.js and npm    `sudo apt-get update`  `sudo apt-get install nodejs`  `sudo apt-get install npm`(**configuration management**)

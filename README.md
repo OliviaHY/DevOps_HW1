@@ -9,7 +9,7 @@ name: Ying(Olivia) Huang;
 email: yhuang34@ncsu.edu
 
 ###Steps
-1.
+1. (** provisioning two servers: ec2 and droplet**)     
      Create droplet in digitalocean: hw1-server1
      ![Droplet](droplet.png)
     Create EC2 in aws. 
@@ -30,7 +30,8 @@ generate do.pub (public key) and do (private key)
 10. `sudo pip install dopy` add dopy module for following python scripts
 11. use `chmod +x digital_ocean.py ` ` chmod +x ec2.py` change authrozation of .py
 12. `python digital_ocean.py --list` `python ec2.py --list` get host and ip from droplet
-13. write two playbooks:       
+13. write two playbooks: 
+**playbooks to install nginx **)      
   *i. ec2:*   
   hosts: us-east-1   
   remote_user: ubuntu   
@@ -46,11 +47,12 @@ generate do.pub (public key) and do (private key)
   ping:    
   name: install nginx   
   apt: pkg=nginx state=installed update_cache=true   
+
 14. put all python scripts that were used to get inventory into ~/scripts
 15.  run playbook `ansible-playbook ec2-playbook.yml -i scripts/ec2.py` `ansible-playbook droplet-playbook.yml -i scripts/digital_ocean.py`
 16.  install node.js and npm    `sudo apt-get update`  `sudo apt-get install nodejs`  `sudo apt-get install npm`(**configuration management**)
 17.  write olivia_reachSky.js to run python scripts and generate actual inventory file
-18.  run olivia_reachSky.js by `nodejs olivia_reachSky.js` (have to run previous steps before this) (**automatically generate inventory**)       
+18.  run olivia_reachSky.js by `nodejs olivia_reachSky.js` (have to run previous steps before this) (**automatically generate inventory**)    
 ###Results
 ![result](hw2.gif))
 

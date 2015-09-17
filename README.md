@@ -9,7 +9,7 @@ name: Ying(Olivia) Huang;
 email: yhuang34@ncsu.edu
 
 ###Steps
-1. (** provisioning two servers: ec2 and droplet**)     
+1.      (** provisioning two servers: ec2 and droplet**)     
      Create droplet in digitalocean: hw1-server1
      ![Droplet](droplet.png)
     Create EC2 in aws. 
@@ -31,7 +31,7 @@ generate do.pub (public key) and do (private key)
 11. use `chmod +x digital_ocean.py ` ` chmod +x ec2.py` change authrozation of .py
 12. `python digital_ocean.py --list` `python ec2.py --list` get host and ip from droplet
 13. write two playbooks: 
-**playbooks to install nginx **)      
+     (**playbooks to install nginx **)      
   *i. ec2:*   
   hosts: us-east-1   
   remote_user: ubuntu   

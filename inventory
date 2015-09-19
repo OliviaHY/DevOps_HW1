@@ -1,0 +1,4 @@
+[us-east-1a]
+node0 ansible_ssh_host=54.164.60.96 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=DevOps_hw1_ec2.pem
+[olivia-devops-hw1-droplet]
+node1 ansible_ssh_host=104.236.244.235 ansible_ssh_user=root

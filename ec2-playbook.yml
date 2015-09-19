@@ -1,6 +1,0 @@
----
-- hosts: us-east-1
-  remote_user: ubuntu
-  tasks:
-    - name: to test is it possible to ping ec2 server
-      ping:

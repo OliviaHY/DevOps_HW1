@@ -1,0 +1,15 @@
+---
+- hosts: node0
+  remote_user: ubuntu
+  tasks:
+    - name: to test is it possible to ping ec2 server
+      ping:
+
+
+- hosts: node1
+  remote_user: root
+  tasks:
+    - name: to test is it possible to ping the droplet server and install nginx
+      ping: 
+    - name: install nginx
+      apt: pkg=nginx state=installed update_cache=true

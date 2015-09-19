@@ -19,11 +19,11 @@ Get digital ocean ssh_key id from result.
 use `export DO_ACCESS_KEY='[token]'`+`export export DO_ACCESS_KEY_ID='[ssh_key_id]'` 
 5.generate key and key id(.csv file) from aws  
 6.`export AWS_ACCESS_KEY='[key from aws]'`+`export AWS_ACCESS_KEY_ID='[key id from aws]'`       
-10.  open in vagrant virtual box install ansible, nodejs, npm etc.    
-11.  `nodejs olivia_ec2.js` firtst, then `nodejs olivia_droplet.js`
-12.  run `eval "$(ssh-agent -s)"`+`ssh-add /vagrant/DevOps_hw1_droplet`+`chmod 400 /vagrant/DevOps_hw1_droplet`    
-1.  run `ansible-playbook playbook.yml -i inventory`    
-13.  remove DevOps_hw1_droplet.pem key.
+7.  open in vagrant virtual box install ansible, nodejs, npm etc.    
+8.  `nodejs olivia_ec2.js` firtst, then `nodejs olivia_droplet.js`   
+9.  run `eval "$(ssh-agent -s)"`+`ssh-add /vagrant/DevOps_hw1_droplet.pem`+`chmod 400 /vagrant/DevOps_hw1_droplet.pem`    
+10.  run `ansible-playbook playbook.yml -i inventory`    
+11.  remove DevOps_hw1_droplet.pem key.
 ###Result
 There is 1 to 2 minutes pause when I run my javascripts.
 ![Result](result.gif)
